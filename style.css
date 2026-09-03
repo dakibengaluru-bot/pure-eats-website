@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf2;
+    color: #3b2415;
+    line-height: 1.6;
+}
+
+header {
+    background: #5a321d;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+}
+
+header p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #5a321d;
+}
+
+section > p {
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+section:first-child {
+    background: #f3dfb8;
+    padding: 70px 25px;
+    border-radius: 20px;
+}
+
+section:first-child h2 {
+    font-size: 42px;
+}
+
+button {
+    background: #d28b28;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #b8731d;
+}
+
+section:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+section:nth-child(2) h2 {
+    width: 100%;
+}
+
+section:nth-child(2) > div {
+    background: white;
+    width: 300px;
+    padding: 30px 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+section:nth-child(2) h3 {
+    font-size: 22px;
+    color: #5a321d;
+    margin-bottom: 10px;
+}
+
+section:nth-child(2) strong {
+    display: block;
+    font-size: 24px;
+    color: #d28b28;
+    margin-top: 15px;
+}
+
+section:nth-child(3) p {
+    display: inline-block;
+    background: white;
+    margin: 10px;
+    padding: 18px 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+section:nth-child(4) {
+    background: #f3dfb8;
+    padding: 50px 25px;
+    border-radius: 20px;
+}
+
+section:nth-child(5) {
+    padding: 40px 20px;
+}
+
+footer {
+    background: #3b2415;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    section:first-child h2 {
+        font-size: 30px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    section:nth-child(2) > div {
+        width: 100%;
+    }
+}
