@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: #fffaf2;
@@ -11,159 +15,519 @@ body {
     line-height: 1.6;
 }
 
+
+/* =========================
+   HEADER / NAVIGATION
+========================= */
+
 header {
-    background: #5a321d;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
+    background: #fffaf2;
+    border-bottom: 1px solid #eadfce;
 }
 
-header h1 {
-    font-size: 42px;
-    letter-spacing: 4px;
-}
-
-header p {
-    margin-top: 8px;
-    font-size: 18px;
-}
-
-main {
-    max-width: 1100px;
+.nav-container {
+    max-width: 1400px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 15px 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-section {
-    text-align: center;
-    margin-bottom: 60px;
+.brand img {
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    display: block;
 }
 
-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #5a321d;
+nav {
+    display: flex;
+    align-items: center;
+    gap: 38px;
 }
 
-section > p {
-    max-width: 700px;
-    margin: 10px auto;
-    font-size: 18px;
+nav a {
+    text-decoration: none;
+    color: #2f241b;
+    font-size: 17px;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-section:first-child {
-    background: #f3dfb8;
-    padding: 70px 25px;
-    border-radius: 20px;
+nav a:hover,
+nav a.active {
+    color: #216b32;
 }
 
-section:first-child h2 {
-    font-size: 42px;
+nav a.active {
+    border-bottom: 3px solid #216b32;
+    padding-bottom: 7px;
 }
 
-button {
-    background: #d28b28;
+.shop-button {
+    background: #246b35;
+    color: white !important;
+    padding: 15px 28px;
+    border-radius: 30px;
+    border: none !important;
+}
+
+.shop-button:hover {
+    background: #174d25;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    background: #6b351b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 7%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-content {
+    width: 48%;
+    color: #fffaf2;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.hero-content h2 {
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+
+.hero-content p {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.hero-content .hero-line {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 35px;
+    padding: 18px 32px;
+    background: #24743a;
     color: white;
+    text-decoration: none;
+    border-radius: 35px;
+    font-size: 19px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    transition: 0.3s;
+}
+
+.hero-button span {
+    font-size: 28px;
+}
+
+.hero-button:hover {
+    background: #174d25;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   HERO PEANUT BUTTER IMAGE
+========================= */
+
+.hero-image {
+    width: 48%;
+    height: 560px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jar {
+    position: relative;
+    width: 370px;
+    height: 420px;
+    z-index: 2;
+}
+
+.jar-lid {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 310px;
+    height: 70px;
+    background: #d9d0c4;
+    border-radius: 50%;
+    border: 8px solid #b7aa99;
+    z-index: 3;
+}
+
+.jar-body {
+    position: absolute;
+    top: 35px;
+    left: 20px;
+    width: 330px;
+    height: 365px;
+    background: #f3e5d2;
+    border-radius: 35px 35px 55px 55px;
+    border: 8px solid #ddd0bd;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.peanut-butter {
+    position: absolute;
+    left: 22px;
+    right: 22px;
+    top: 40px;
+    bottom: 20px;
+    background: #c87925;
+    border-radius: 25px;
+}
+
+.swirl {
+    position: absolute;
+    width: 230px;
+    height: 100px;
+    top: 25px;
+    left: 30px;
+    border-top: 14px solid #e39a45;
+    border-radius: 50%;
+    transform: rotate(-8deg);
+}
+
+.peanuts {
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    font-size: 55px;
+    letter-spacing: -20px;
+    z-index: 3;
+}
+
+.peanut-decoration {
+    position: absolute;
+    font-size: 75px;
+    z-index: 3;
+}
+
+.peanut-one {
+    bottom: 70px;
+    left: 30px;
+    transform: rotate(-20deg);
+}
+
+.peanut-two {
+    top: 80px;
+    right: 20px;
+    transform: rotate(20deg);
+}
+
+.leaf {
+    position: absolute;
+    font-size: 100px;
+    z-index: 1;
+    opacity: 0.8;
+}
+
+.leaf-one {
+    left: 0;
+    top: 100px;
+    transform: rotate(-25deg);
+}
+
+.leaf-two {
+    right: 0;
+    bottom: 40px;
+    transform: rotate(25deg);
+}
+
+.natural-text {
+    position: absolute;
+    right: 0;
+    top: 30px;
+    color: #fffaf2;
+    font-size: 27px;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.15;
+    transform: rotate(-5deg);
+    z-index: 4;
+}
+
+.natural-text span {
+    display: block;
+    font-size: 38px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.products-section {
+    padding: 80px 7%;
+    text-align: center;
+    background: #fffaf2;
+}
+
+.products-section h2,
+.benefits-section h2,
+.about-section h2,
+.contact-section h2 {
+    color: #3b2415;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.product-card {
+    width: 330px;
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    color: #246b35;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.product-card p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.product-card strong {
+    display: block;
+    color: #b65d20;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.product-card button,
+.whatsapp-button {
     border: none;
+    background: #246b35;
+    color: white;
     padding: 14px 28px;
     border-radius: 30px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 15px;
 }
 
-button:hover {
-    background: #b8731d;
+.product-card button:hover,
+.whatsapp-button:hover {
+    background: #174d25;
 }
 
-section:nth-child(2) {
+
+/* =========================
+   BENEFITS
+========================= */
+
+.benefits-section {
+    padding: 80px 7%;
+    text-align: center;
+    background: #f3eadc;
+}
+
+.benefits {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 25px;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 45px;
 }
 
-section:nth-child(2) h2 {
-    width: 100%;
-}
-
-section:nth-child(2) > div {
+.benefits div {
+    width: 280px;
+    padding: 30px;
     background: white;
-    width: 300px;
-    padding: 30px 20px;
     border-radius: 18px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
 
-section:nth-child(2) h3 {
-    font-size: 22px;
-    color: #5a321d;
-    margin-bottom: 10px;
+.benefits span {
+    font-size: 45px;
 }
 
-section:nth-child(2) strong {
-    display: block;
-    font-size: 24px;
-    color: #d28b28;
-    margin-top: 15px;
+.benefits h3 {
+    color: #246b35;
+    font-size: 23px;
+    margin: 10px 0;
 }
 
-section:nth-child(3) p {
-    display: inline-block;
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-section {
+    padding: 80px 10%;
+    text-align: center;
     background: white;
-    margin: 10px;
-    padding: 18px 25px;
-    border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
 }
 
-section:nth-child(4) {
-    background: #f3dfb8;
-    padding: 50px 25px;
-    border-radius: 20px;
+.about-section p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 20px;
 }
 
-section:nth-child(5) {
-    padding: 40px 20px;
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-section {
+    padding: 80px 10%;
+    text-align: center;
+    background: #6b351b;
+    color: white;
 }
+
+.contact-section h2 {
+    color: white;
+}
+
+.contact-section p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.whatsapp-button {
+    background: #24743a;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
     background: #3b2415;
     color: white;
     text-align: center;
     padding: 25px;
-    margin-top: 20px;
 }
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    .nav-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .brand img {
+        max-width: 280px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 60px 25px;
+        text-align: center;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 52px;
+    }
+
+    .hero-content h2 {
+        font-size: 27px;
+    }
+
+    .hero-image {
+        width: 100%;
+        margin-top: 40px;
+        transform: scale(0.8);
+    }
+}
+
 
 @media (max-width: 600px) {
 
-    header h1 {
+    .brand img {
+        max-width: 240px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 23px;
+    }
+
+    .hero-image {
+        transform: scale(0.65);
+        margin-top: 10px;
+        margin-bottom: -80px;
+    }
+
+    .products-section h2,
+    .benefits-section h2,
+    .about-section h2,
+    .contact-section h2 {
         font-size: 32px;
     }
-
-    main {
-        padding: 30px 15px;
-    }
-
-    section:first-child h2 {
-        font-size: 30px;
-    }
-
-    section h2 {
-        font-size: 26px;
-    }
-
-    section:nth-child(2) > div {
-        width: 100%;
-    }
-}
-
-
-header img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
 }
