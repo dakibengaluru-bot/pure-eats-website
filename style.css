@@ -395,15 +395,17 @@ footer {
     }
 }
 /* =========================================
-   FINAL HERO LAYOUT
-   LEFT = TEXT
-   RIGHT = FULL-HEIGHT IMAGE
+   PURE EATS - FULL WIDTH HERO
+   TEXT LEFT | FULL IMAGE RIGHT
    ========================================= */
 
 .hero {
     position: relative;
-    width: 100%;
+    width: 100vw;
+    max-width: none;
     min-height: 600px;
+    height: 600px;
+    margin-left: calc(50% - 50vw);
     padding: 0;
     overflow: hidden;
     background: #fffaf2;
@@ -412,10 +414,10 @@ footer {
 .hero-content {
     position: relative;
     z-index: 2;
-    width: 50%;
-    min-height: 600px;
+    width: 50vw;
+    height: 600px;
     margin: 0;
-    padding: 80px 60px 80px 10%;
+    padding: 80px 60px 80px 10vw;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -431,8 +433,8 @@ footer {
     top: 0;
     right: 0;
     left: auto;
-    width: 50%;
-    height: 100%;
+    width: 50vw;
+    height: 600px;
     margin: 0;
     padding: 0;
     z-index: 1;
