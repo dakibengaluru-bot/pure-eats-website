@@ -96,12 +96,19 @@ nav .active {
 }
 
 .hero-content {
-    max-width: 1400px;
-    margin: auto;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 600px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+    justify-content: flex-start;
+    padding-left: 8%;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    width: 42%;
 }
 
 .hero-text {
