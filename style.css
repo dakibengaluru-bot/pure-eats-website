@@ -197,7 +197,11 @@ nav .active {
 }
 
 .hero-text {
-    width: 45%;
+    width: 34%;
+    max-width: 500px;
+    margin-left: 6%;
+    position: relative;
+    z-index: 2;
 }
 
 /* =========================
