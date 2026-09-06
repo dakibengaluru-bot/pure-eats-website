@@ -143,7 +143,9 @@ nav .active {
 }
 
 
-/* HERO IMAGE */
+/* =========================
+   FULL WIDTH HERO IMAGE
+========================= */
 
 .hero {
     position: relative;
@@ -167,19 +169,27 @@ nav .active {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
     border-radius: 0;
 }
 
 .hero-content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     width: 100%;
     min-height: 600px;
+    max-width: none;
+    margin: 0;
+    padding: 0 8%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
+.hero-text {
+    width: 45%;
+}
 
 /* =========================
    PRODUCTS
