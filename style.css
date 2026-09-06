@@ -173,7 +173,7 @@ nav .active {
     border-radius: 0;
 
     /* Make the hero image lighter */
-    filter: brightness(1.25);
+    filter: brightness(1.35);
 }
 
 .hero-content {
