@@ -394,47 +394,4 @@ footer {
         font-size: 17px;
     }
 }
-/* HERO SECTION - TEXT LEFT, FULL IMAGE RIGHT */
 
-.hero {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    min-height: 600px;
-    overflow: hidden;
-}
-
-/* LEFT SIDE - TEXT */
-.hero-content {
-    grid-column: 1;
-    width: 100%;
-    max-width: none;
-    padding: 80px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* RIGHT SIDE - IMAGE */
-.hero-image {
-    grid-column: 2;
-    width: 100%;
-    height: 100%;
-    min-height: 600px;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.hero-image img {
-    width: 100%;
-    height: 100%;
-    min-height: 600px;
-    object-fit: cover;
-    display: block;
-    border-radius: 0;
-}
