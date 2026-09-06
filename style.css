@@ -404,15 +404,16 @@ footer {
         font-size: 17px;
     }
 }
-/* ===== FULL HERO IMAGE ===== */
+/* FINAL HERO FIX */
 
 .hero {
     position: relative !important;
-    width: 100% !important;
+    width: 100vw !important;
+    max-width: none !important;
     min-height: 600px !important;
+    margin: 0 !important;
     padding: 0 !important;
     overflow: hidden !important;
-    background: transparent !important;
 }
 
 .hero-image {
@@ -425,7 +426,7 @@ footer {
     height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    z-index: 0 !important;
+    z-index: 1 !important;
 }
 
 .hero-image img {
@@ -441,16 +442,17 @@ footer {
     position: relative !important;
     z-index: 2 !important;
     width: 100% !important;
-    max-width: 1400px !important;
+    max-width: none !important;
     min-height: 600px !important;
-    margin: 0 auto !important;
-    padding: 80px 6% !important;
+    margin: 0 !important;
+    padding: 0 7% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
 }
 
 .hero-text {
-    width: 48% !important;
-    max-width: 600px !important;
+    width: 45% !important;
+    position: relative !important;
+    z-index: 3 !important;
 }
