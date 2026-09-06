@@ -431,3 +431,9 @@ footer {
     visibility: visible !important;
     opacity: 1 !important;
 }
+
+/* MAKE HERO IMAGE LIGHTER */
+
+.hero-image img {
+    filter: brightness(1.22) !important;
+}
